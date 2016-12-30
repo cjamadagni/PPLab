@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #define numOfThreads 5 // number of threads
 
-// Function to print message and thread ID
+// Function to print hello message and thread ID
 void printHelloMessage(void* threadID) {
 	long tid;
 	tid = (long) threadID;

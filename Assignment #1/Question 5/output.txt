@@ -1,0 +1,23 @@
+
+
+Vector X consists of 40000 elements with value = 1
+Vector Y consists of 40000 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 10000
+	Local sum = 30000.000000
+	Global sum = 30000.000000
+
+Thread 1 computed sum between indices 10000 and 20000
+	Local sum = 30000.000000
+	Global sum = 60000.000000
+
+Thread 2 computed sum between indices 20000 and 30000
+	Local sum = 30000.000000
+	Global sum = 90000.000000
+
+Thread 3 computed sum between indices 30000 and 40000
+	Local sum = 30000.000000
+	Global sum = 120000.000000
+
+DOT PRODUCT (X.Y) = 120000.000000
+

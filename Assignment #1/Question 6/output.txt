@@ -1,0 +1,24 @@
+
+
+Threshold value = 10
+
+Increment-thread 2: Count incremented to 1.
+Increment-thread 3: Count incremented to 2.
+Increment-thread 2: Count incremented to 3.
+Increment-thread 3: Count incremented to 4.
+Increment-thread 2: Count incremented to 5.
+Increment-thread 3: Count incremented to 6.
+Increment-thread 2: Count incremented to 7.
+Increment-thread 3: Count incremented to 8.
+Increment-thread 2: Count incremented to 9.
+Increment-thread 3: Count incremented to 10.
+Increment-thread 3: Threshold value reached!
+Increment-thread 3: Watch-count thread has been signalled.
+
+Watch-count thread 1: Condition signal received. Count= 10
+Watch-count thread 1: Unlocking mutex.
+
+
+Joined all 3 threads.
+Final value of shared variable = 10
+

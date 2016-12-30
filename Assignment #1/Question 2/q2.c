@@ -12,8 +12,9 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#define numOfThreads 5
+#define numOfThreads 5 // number of threads
 
+// Function to print message and thread ID
 void printHelloMessage(void* threadID) {
 	long tid;
 	tid = (long) threadID;
@@ -21,6 +22,7 @@ void printHelloMessage(void* threadID) {
 	pthread_exit(0);
 }
 
+// Driver function to create threads
 int main() {
 	 pthread_t threads[numOfThreads];
 	 int errorCode;

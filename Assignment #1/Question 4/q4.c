@@ -1,5 +1,5 @@
 /******************************************************************************
-* FILE: q5.c
+* FILE: q4.c
 * ASSIGNMENT: 1
 * QUESTION: 4
 * DESCRIPTION: Program to accept two vectors and calculate the time taken for
@@ -26,8 +26,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Globally accessible variables and mutex
+
 #define veclen 65536 // vector length
+
+// Globally accessible variables and mutex
 int numOfThreads; // number of threads
 long length;
 double *x;
@@ -52,7 +54,7 @@ void *DAXPY (void *arg) {
 		x[i] += a*x[i] + y[i];
 	}
 
-  printf("\n\nThread %ld computed sum between indices %d and %d",offset, start, end);
+	printf("\n\nThread %ld computed sum between indices %d and %d",offset, start, end);
 
 	pthread_exit((void*) 0);
 }
@@ -62,9 +64,9 @@ int main(int argc, char *argv[]) {
 
 	long i;
 	void *status;
-  double *p, *q;
-  numOfThreads = atoi(argv[1]);
-  pthread_t threads[numOfThreads];
+	double *p, *q;
+	numOfThreads = atoi(argv[1]);
+	pthread_t threads[numOfThreads];
 	pthread_attr_t attr;
 
 	// Allocating memory and initializing values of input vectors
@@ -80,13 +82,13 @@ int main(int argc, char *argv[]) {
 	printf("\n\nVector X consists of %d elements with value = 1", (veclen));
 	printf("\nVector Y consists of %d elements with value = 3", (veclen));
 
-  // Updating value of global structure
-  x = p;
-  y = q;
-  a = 4;
-  length = veclen/numOfThreads;
+    // Updating value of global structure
+	x = p;
+	y = q;
+	a = 4;
+	length = veclen/numOfThreads;
 
-  begin = clock();
+	begin = clock();
 	// Creating threads to perform the dot product calculation
 	pthread_attr_init(&attr);
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
@@ -96,15 +98,15 @@ int main(int argc, char *argv[]) {
 
 
  	// Waiting for other threads to finish execution
- 	for(i=0; i<numOfThreads; i++)
- 		pthread_join(threads[i], &status);
-  stop = clock();
-  cpuTimeUsed = ((double) (stop - begin)) / CLOCKS_PER_SEC;
+	for(i=0; i<numOfThreads; i++)
+		pthread_join(threads[i], &status);
+	stop = clock();
+	cpuTimeUsed = ((double) (stop - begin)) / CLOCKS_PER_SEC;
 
-  printf("\n\nTime taken : %lf\n", cpuTimeUsed);
+	printf("\n\nTime taken : %lf\n", cpuTimeUsed);
 
  	// Memory cleanup
- 	free(p);
- 	free(q);
- 	pthread_exit(NULL);
- }
+	free(p);
+	free(q);
+	pthread_exit(NULL);
+}

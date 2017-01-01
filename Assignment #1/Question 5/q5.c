@@ -16,7 +16,7 @@
 *		input vectors in case of randomly generated input. 
 *            
 *
-* AUTHORS: Chirag Jamadagni (13CO117) & Abhijith Anilkumar (13CO102)  
+* 
 ******************************************************************************/
 
 

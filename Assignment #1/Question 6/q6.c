@@ -9,7 +9,7 @@
 *   		   increment-thread gives a signal, the watch-count thread releases
 *		       the lock and terminates along with the two increment-threads					
 * 
-* AUTHORS: Chirag Jamadagni (13CO117) & Abhijith Anilkumar (13CO102)  
+* 
 ******************************************************************************/
 
 #include <pthread.h>

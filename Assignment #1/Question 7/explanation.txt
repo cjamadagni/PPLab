@@ -1,0 +1,11 @@
+Q. What are the largest size MM programs that can be run?
+A. Matrices of size >9454 result in a compiler error. Hence, matrices smaller than this threshold value can be run. 
+
+Q. How much do they page fault?
+
+Q. What are the largest size (n using matmul) programs that can be run with limited pagefaults?
+
+
+Limits of static = 
+Limits of stack = 
+Limits of heap = 

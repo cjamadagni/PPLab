@@ -9,9 +9,9 @@ Generated Matrix 2 of size 250X250
 
 Thread 0 computed sum between rows 0 and 250
 
-Time taken : 0.121262
+Time taken : 0.041376
 
-Speed-Up = 2.229081
+Speed-Up = 0.760588
 
 -----------------------------------------------------------------------------
 
@@ -27,9 +27,9 @@ Thread 1 computed sum between rows 125 and 250
 
 Thread 0 computed sum between rows 0 and 125
 
-Time taken : 0.095695
+Time taken : 0.037332
 
-Speed-Up = 1.759099
+Speed-Up = 0.686250
 
 -----------------------------------------------------------------------------
 
@@ -41,15 +41,15 @@ Generated Matrix 1 of size 250X250
 Generated Matrix 2 of size 250X250
 
 
-Thread 0 computed sum between rows 0 and 83
-
 Thread 1 computed sum between rows 83 and 166
+
+Thread 0 computed sum between rows 0 and 83
 
 Thread 2 computed sum between rows 166 and 249
 
-Time taken : 0.129317
+Time taken : 0.044869
 
-Speed-Up = 2.377151
+Speed-Up = 0.824798
 
 -----------------------------------------------------------------------------
 
@@ -69,9 +69,9 @@ Thread 1 computed sum between rows 62 and 124
 
 Thread 3 computed sum between rows 186 and 248
 
-Time taken : 0.139203
+Time taken : 0.053975
 
-Speed-Up = 2.558879
+Speed-Up = 0.992188
 
 -----------------------------------------------------------------------------
 
@@ -83,19 +83,19 @@ Generated Matrix 1 of size 250X250
 Generated Matrix 2 of size 250X250
 
 
-Thread 0 computed sum between rows 0 and 50
-
-Thread 1 computed sum between rows 50 and 100
+Thread 4 computed sum between rows 200 and 250
 
 Thread 2 computed sum between rows 100 and 150
 
+Thread 1 computed sum between rows 50 and 100
+
+Thread 0 computed sum between rows 0 and 50
+
 Thread 3 computed sum between rows 150 and 200
 
-Thread 4 computed sum between rows 200 and 250
+Time taken : 0.058654
 
-Time taken : 0.127155
-
-Speed-Up = 2.337408
+Speed-Up = 1.078199
 
 -----------------------------------------------------------------------------
 
@@ -109,19 +109,19 @@ Generated Matrix 2 of size 250X250
 
 Thread 3 computed sum between rows 123 and 164
 
-Thread 2 computed sum between rows 82 and 123
-
-Thread 1 computed sum between rows 41 and 82
-
-Thread 5 computed sum between rows 205 and 246
-
 Thread 0 computed sum between rows 0 and 41
 
 Thread 4 computed sum between rows 164 and 205
 
-Time taken : 0.133907
+Thread 2 computed sum between rows 82 and 123
 
-Speed-Up = 2.461526
+Thread 5 computed sum between rows 205 and 246
+
+Thread 1 computed sum between rows 41 and 82
+
+Time taken : 0.057991
+
+Speed-Up = 1.066011
 
 -----------------------------------------------------------------------------
 
@@ -133,23 +133,23 @@ Generated Matrix 1 of size 250X250
 Generated Matrix 2 of size 250X250
 
 
-Thread 0 computed sum between rows 0 and 35
-
 Thread 2 computed sum between rows 70 and 105
+
+Thread 0 computed sum between rows 0 and 35
 
 Thread 1 computed sum between rows 35 and 70
 
-Thread 3 computed sum between rows 105 and 140
-
 Thread 5 computed sum between rows 175 and 210
 
-Thread 4 computed sum between rows 140 and 175
+Thread 3 computed sum between rows 105 and 140
 
 Thread 6 computed sum between rows 210 and 245
 
-Time taken : 0.135285
+Thread 4 computed sum between rows 140 and 175
 
-Speed-Up = 2.486857
+Time taken : 0.069223
+
+Speed-Up = 1.272482
 
 -----------------------------------------------------------------------------
 
@@ -161,25 +161,25 @@ Generated Matrix 1 of size 250X250
 Generated Matrix 2 of size 250X250
 
 
-Thread 0 computed sum between rows 0 and 31
-
-Thread 2 computed sum between rows 62 and 93
-
-Thread 1 computed sum between rows 31 and 62
-
 Thread 3 computed sum between rows 93 and 124
+
+Thread 0 computed sum between rows 0 and 31
 
 Thread 4 computed sum between rows 124 and 155
 
+Thread 1 computed sum between rows 31 and 62
+
 Thread 5 computed sum between rows 155 and 186
+
+Thread 2 computed sum between rows 62 and 93
 
 Thread 6 computed sum between rows 186 and 217
 
 Thread 7 computed sum between rows 217 and 248
 
-Time taken : 0.136941
+Time taken : 0.072837
 
-Speed-Up = 2.517298
+Speed-Up = 1.338915
 
 -----------------------------------------------------------------------------
 
@@ -191,26 +191,26 @@ Generated Matrix 1 of size 250X250
 Generated Matrix 2 of size 250X250
 
 
-Thread 0 computed sum between rows 0 and 27
-
-Thread 2 computed sum between rows 54 and 81
-
-Thread 8 computed sum between rows 216 and 243
-
 Thread 1 computed sum between rows 27 and 54
-
-Thread 3 computed sum between rows 81 and 108
 
 Thread 4 computed sum between rows 108 and 135
 
+Thread 2 computed sum between rows 54 and 81
+
 Thread 5 computed sum between rows 135 and 162
 
-Thread 7 computed sum between rows 189 and 216
+Thread 3 computed sum between rows 81 and 108
+
+Thread 0 computed sum between rows 0 and 27
 
 Thread 6 computed sum between rows 162 and 189
 
-Time taken : 0.121708
+Thread 8 computed sum between rows 216 and 243
 
-Speed-Up = 2.237279
+Thread 7 computed sum between rows 189 and 216
+
+Time taken : 0.058759
+
+Speed-Up = 1.080129
 
 -----------------------------------------------------------------------------

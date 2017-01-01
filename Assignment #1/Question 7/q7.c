@@ -59,7 +59,7 @@ void *matMultiply(void* arg) {
    	pthread_exit((void*) 0);
 }
 
-// function to generate the matrices
+// Function to generate the matrices
 void matrixGen(double x[][matlen], int m) {
 
    int i, j;

@@ -59,6 +59,7 @@ void *matMultiply(void* arg) {
    	pthread_exit((void*) 0);
 }
 
+// function to generate the matrices
 void matrixGen(double x[][matlen], int m) {
 
    int i, j;
@@ -80,7 +81,7 @@ int main(int argc, char* argv[]) {
 
    srandom(1);
    matrixGen(x, matlen);
-   printf("Generated Matrix 1 of size %dX%d\n", matlen, matlen);
+   printf("\n\nGenerated Matrix 1 of size %dX%d\n", matlen, matlen);
    matrixGen(y, matlen);
    printf("Generated Matrix 2 of size %dX%d\n", matlen, matlen);
 

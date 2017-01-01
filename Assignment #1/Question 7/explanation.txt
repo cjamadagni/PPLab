@@ -16,7 +16,9 @@ matrix size          number of page faults
 Q. What are the largest size (n using matmul) programs that can be run with limited pagefaults?
 A. By setting a limit of 1000 page faults, we are able to run programs with matrix sizes of the order <500.
 
-NOTE: We have used the getrlimit() and setrlimit() system calls and run the program. The appropriate output statistics can be found in output.txt and in the screenshot attached. 
+We have used the getrlimit() and setrlimit() system calls and run the program. We have set the stack size as 1024, and the appropriate output statistics can be found in output.txt and in the screenshot attached.
+
+Other parameters can also be changed using setrlimit(). We can set these parameters by changing arguments like RLIMIT_STACK for stack and RLIMIT_DATA for heap.   
 
 
 

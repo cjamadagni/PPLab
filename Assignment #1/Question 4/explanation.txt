@@ -1,0 +1,14 @@
+Number of threads which gives max speed up = 2
+
+
+NOTE 1: We first wrote a uniprocessor implementation of DAXPY and found the execution time to be 0.000482 s. We have used this value while calculating the speed up ratio.
+
+NOTE 2: We believe that the speed up formula should T1/Tn instead of Tn/T1 (which is mentioned in the question). We have followed the ratio specified in the question but have also printed the execution time for clarity.
+
+Q. What happens if no. of threads are increased beyond this point? Why?
+
+A. If the number of threads are increased beyond this point, the execution time increases. In order to explain why I will give a simple analogy. 
+
+Imagine you have a corridor that you can fit four people down, side by side. You want to move items from one end to the other. The most efficient number of people to achieve this task is 4. If you have 1-3 people then you're missing out on using some corridor space. If you have 5 or more people, then at least one of those people is stuck queueing behind another person at all times. Adding more and more people just clogs up the corridor, and doesn't speed up the acivity.
+
+Therefore, by increasing the number of threads beyond this point, we are forcing some threads to always be queued up behind another which increases the execution time.  

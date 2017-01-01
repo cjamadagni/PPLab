@@ -5,12 +5,13 @@ Number of Threads : 1
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
+The value of a  = 4.000000
 
 Thread 0 computed sum between indices 0 and 65536
 
-Time taken : 0.000288
+Time taken : 0.000053
 
-Speed-Up = 0.597510
+Speed up = 0.109959
 
 -----------------------------------------------------------------------------
 
@@ -20,14 +21,15 @@ Number of Threads : 2
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
-
-Thread 0 computed sum between indices 0 and 32768
+The value of a  = 4.000000
 
 Thread 1 computed sum between indices 32768 and 65536
 
-Time taken : 0.000238
+Thread 0 computed sum between indices 0 and 32768
 
-Speed-Up = 0.493776
+Time taken : 0.001522
+
+Speed up = 3.157676
 
 -----------------------------------------------------------------------------
 
@@ -37,6 +39,7 @@ Number of Threads : 3
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
+The value of a  = 4.000000
 
 Thread 1 computed sum between indices 21845 and 43690
 
@@ -44,9 +47,9 @@ Thread 0 computed sum between indices 0 and 21845
 
 Thread 2 computed sum between indices 43690 and 65535
 
-Time taken : 0.000694
+Time taken : 0.000675
 
-Speed-Up = 1.439834
+Speed up = 1.400415
 
 -----------------------------------------------------------------------------
 
@@ -56,18 +59,19 @@ Number of Threads : 4
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
-
-Thread 0 computed sum between indices 0 and 16384
+The value of a  = 4.000000
 
 Thread 1 computed sum between indices 16384 and 32768
+
+Thread 0 computed sum between indices 0 and 16384
 
 Thread 2 computed sum between indices 32768 and 49152
 
 Thread 3 computed sum between indices 49152 and 65536
 
-Time taken : 0.000503
+Time taken : 0.000678
 
-Speed-Up = 1.043568
+Speed up = 1.406639
 
 -----------------------------------------------------------------------------
 
@@ -77,6 +81,7 @@ Number of Threads : 5
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
+The value of a  = 4.000000
 
 Thread 0 computed sum between indices 0 and 13107
 
@@ -88,9 +93,9 @@ Thread 1 computed sum between indices 13107 and 26214
 
 Thread 4 computed sum between indices 52428 and 65535
 
-Time taken : 0.000447
+Time taken : 0.001156
 
-Speed-Up = 0.927386
+Speed up = 2.398340
 
 -----------------------------------------------------------------------------
 
@@ -100,22 +105,23 @@ Number of Threads : 6
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
+The value of a  = 4.000000
 
 Thread 0 computed sum between indices 0 and 10922
 
-Thread 2 computed sum between indices 21844 and 32766
-
-Thread 3 computed sum between indices 32766 and 43688
-
 Thread 1 computed sum between indices 10922 and 21844
+
+Thread 2 computed sum between indices 21844 and 32766
 
 Thread 4 computed sum between indices 43688 and 54610
 
+Thread 3 computed sum between indices 32766 and 43688
+
 Thread 5 computed sum between indices 54610 and 65532
 
-Time taken : 0.000411
+Time taken : 0.000798
 
-Speed-Up = 0.852697
+Speed up = 1.655602
 
 -----------------------------------------------------------------------------
 
@@ -125,24 +131,25 @@ Number of Threads : 7
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
-
-Thread 0 computed sum between indices 0 and 9362
-
-Thread 3 computed sum between indices 28086 and 37448
+The value of a  = 4.000000
 
 Thread 1 computed sum between indices 9362 and 18724
 
 Thread 2 computed sum between indices 18724 and 28086
 
+Thread 0 computed sum between indices 0 and 9362
+
 Thread 4 computed sum between indices 37448 and 46810
 
 Thread 5 computed sum between indices 46810 and 56172
 
+Thread 3 computed sum between indices 28086 and 37448
+
 Thread 6 computed sum between indices 56172 and 65534
 
-Time taken : 0.000517
+Time taken : 0.000809
 
-Speed-Up = 1.072614
+Speed up = 1.678423
 
 -----------------------------------------------------------------------------
 
@@ -152,6 +159,7 @@ Number of Threads : 8
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
+The value of a  = 4.000000
 
 Thread 0 computed sum between indices 0 and 8192
 
@@ -159,9 +167,9 @@ Thread 1 computed sum between indices 8192 and 16384
 
 Thread 3 computed sum between indices 24576 and 32768
 
-Thread 5 computed sum between indices 40960 and 49152
-
 Thread 4 computed sum between indices 32768 and 40960
+
+Thread 5 computed sum between indices 40960 and 49152
 
 Thread 2 computed sum between indices 16384 and 24576
 
@@ -169,9 +177,9 @@ Thread 6 computed sum between indices 49152 and 57344
 
 Thread 7 computed sum between indices 57344 and 65536
 
-Time taken : 0.000630
+Time taken : 0.002396
 
-Speed-Up = 1.307054
+Speed up = 4.970954
 
 -----------------------------------------------------------------------------
 
@@ -181,27 +189,28 @@ Number of Threads : 9
 
 Vector X consists of 65536 elements with value = 1
 Vector Y consists of 65536 elements with value = 3
+The value of a  = 4.000000
 
 Thread 0 computed sum between indices 0 and 7281
 
 Thread 1 computed sum between indices 7281 and 14562
 
+Thread 2 computed sum between indices 14562 and 21843
+
+Thread 8 computed sum between indices 58248 and 65529
+
 Thread 3 computed sum between indices 21843 and 29124
 
-Thread 2 computed sum between indices 14562 and 21843
+Thread 6 computed sum between indices 43686 and 50967
 
 Thread 5 computed sum between indices 36405 and 43686
 
 Thread 4 computed sum between indices 29124 and 36405
 
-Thread 6 computed sum between indices 43686 and 50967
-
 Thread 7 computed sum between indices 50967 and 58248
 
-Thread 8 computed sum between indices 58248 and 65529
+Time taken : 0.001331
 
-Time taken : 0.000909
-
-Speed-Up = 1.885892
+Speed up = 2.761411
 
 -----------------------------------------------------------------------------

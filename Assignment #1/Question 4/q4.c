@@ -82,11 +82,13 @@ int main(int argc, char *argv[]) {
 	printf("\n\nVector X consists of %d elements with value = 1", (veclen));
 	printf("\nVector Y consists of %d elements with value = 3", (veclen));
 
-  // Updating value of global structure
+
+    // Updating value of global structure
 	x = p;
 	y = q;
 	a = 4;
 	length = veclen/numOfThreads;
+	printf("\nThe value of a  = %f", a);
 
 	begin = clock();
 	// Creating threads to perform the dot product calculation
@@ -101,7 +103,7 @@ int main(int argc, char *argv[]) {
 	cpuTimeUsed = ((double) (stop - begin)) / CLOCKS_PER_SEC;
 
 	printf("\n\nTime taken : %lf\n", cpuTimeUsed);
-	printf("\nSpeed-Up = %lf\n", cpuTimeUsed/0.000482);
+	printf("\nSpeed up = %lf\n", cpuTimeUsed/0.000482);
 	printf("\n-----------------------------------------------------------------------------\n");
 
  	// Memory cleanup

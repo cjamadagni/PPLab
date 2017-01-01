@@ -12,15 +12,16 @@
 * Output: Execution time and speed-up value
 *
 *
-* 
+*
 ******************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <time.h>
+#include <sys/resource.h>
 
-#define matlen 250
+#define matlen 100
 
 // Global variables
 int numOfThreads; // number of threads
@@ -68,12 +69,28 @@ void matrixGen(double x[][matlen], int m) {
          x[i][j] = random()/((double) RAND_MAX);
 }
 
+void print_rlimit(struct rlimit *r, const char *name) {
+    int cur;                /* Soft limit */
+    int max;                /* Hard limit */
+    cur = r->rlim_cur;
+    max = r->rlim_max;
+    printf("RLIMIT_%s :rlim_cur => %d, :rlim_max => %d\n",
+           name, cur, max);
+}
+
 // Driver program for thread creation and displaying final result
 int main(int argc, char* argv[]) {
 
    long i;
+   struct rlimit rlim;
    numOfThreads = atoi(argv[1]);
    pthread_t threads[numOfThreads];
+   int resources[] = {RLIMIT_CORE, RLIMIT_CPU, RLIMIT_DATA, RLIMIT_FSIZE,
+                       RLIMIT_MEMLOCK, RLIMIT_NOFILE, RLIMIT_NPROC, RLIMIT_RSS,
+                       RLIMIT_STACK};
+   const char *names[] = {"CORE", "CPU", "DATA", "FSIZE",
+                           "MEMLOCK", "NOFILE", "NPROC", "RSS",
+                           "STACK"};
 
    length = matlen/numOfThreads;
 
@@ -100,6 +117,11 @@ int main(int argc, char* argv[]) {
 
  	 printf("\n\nTime taken : %lf\n", cpuTimeUsed);
    printf("\nSpeed-Up = %lf\n", cpuTimeUsed/0.0544);
+   int n = sizeof(resources)/sizeof(resources[0]);
+   for (i = 0; i < n; i++) {
+       getrlimit(resources[i], &rlim);
+       print_rlimit(&rlim, names[i]);
+   }
    printf("\n-----------------------------------------------------------------------------\n");
 
    return 0;

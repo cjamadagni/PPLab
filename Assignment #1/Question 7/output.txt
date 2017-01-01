@@ -3,15 +3,24 @@ Iteration 1
 
 Number of Threads : 1
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 0 computed sum between rows 0 and 250
+Thread 0 computed sum between rows 0 and 100
 
-Time taken : 0.041376
+Time taken : 0.002322
 
-Speed-Up = 0.760588
+Speed-Up = 0.042684
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -19,17 +28,26 @@ Iteration 2
 
 Number of Threads : 2
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 1 computed sum between rows 125 and 250
+Thread 0 computed sum between rows 0 and 50
 
-Thread 0 computed sum between rows 0 and 125
+Thread 1 computed sum between rows 50 and 100
 
-Time taken : 0.037332
+Time taken : 0.001676
 
-Speed-Up = 0.686250
+Speed-Up = 0.030809
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -37,19 +55,28 @@ Iteration 3
 
 Number of Threads : 3
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 1 computed sum between rows 83 and 166
+Thread 0 computed sum between rows 0 and 33
 
-Thread 0 computed sum between rows 0 and 83
+Thread 1 computed sum between rows 33 and 66
 
-Thread 2 computed sum between rows 166 and 249
+Thread 2 computed sum between rows 66 and 99
 
-Time taken : 0.044869
+Time taken : 0.002630
 
-Speed-Up = 0.824798
+Speed-Up = 0.048346
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -57,21 +84,30 @@ Iteration 4
 
 Number of Threads : 4
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 0 computed sum between rows 0 and 62
+Thread 0 computed sum between rows 0 and 25
 
-Thread 2 computed sum between rows 124 and 186
+Thread 1 computed sum between rows 25 and 50
 
-Thread 1 computed sum between rows 62 and 124
+Thread 3 computed sum between rows 75 and 100
 
-Thread 3 computed sum between rows 186 and 248
+Thread 2 computed sum between rows 50 and 75
 
-Time taken : 0.053975
+Time taken : 0.000995
 
-Speed-Up = 0.992188
+Speed-Up = 0.018290
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -79,23 +115,32 @@ Iteration 5
 
 Number of Threads : 5
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 4 computed sum between rows 200 and 250
+Thread 0 computed sum between rows 0 and 20
 
-Thread 2 computed sum between rows 100 and 150
+Thread 2 computed sum between rows 40 and 60
 
-Thread 1 computed sum between rows 50 and 100
+Thread 1 computed sum between rows 20 and 40
 
-Thread 0 computed sum between rows 0 and 50
+Thread 4 computed sum between rows 80 and 100
 
-Thread 3 computed sum between rows 150 and 200
+Thread 3 computed sum between rows 60 and 80
 
-Time taken : 0.058654
+Time taken : 0.001212
 
-Speed-Up = 1.078199
+Speed-Up = 0.022279
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -103,25 +148,34 @@ Iteration 6
 
 Number of Threads : 6
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 3 computed sum between rows 123 and 164
+Thread 0 computed sum between rows 0 and 16
 
-Thread 0 computed sum between rows 0 and 41
+Thread 3 computed sum between rows 48 and 64
 
-Thread 4 computed sum between rows 164 and 205
+Thread 1 computed sum between rows 16 and 32
 
-Thread 2 computed sum between rows 82 and 123
+Thread 4 computed sum between rows 64 and 80
 
-Thread 5 computed sum between rows 205 and 246
+Thread 2 computed sum between rows 32 and 48
 
-Thread 1 computed sum between rows 41 and 82
+Thread 5 computed sum between rows 80 and 96
 
-Time taken : 0.057991
+Time taken : 0.008072
 
-Speed-Up = 1.066011
+Speed-Up = 0.148382
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -129,27 +183,36 @@ Iteration 7
 
 Number of Threads : 7
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 2 computed sum between rows 70 and 105
+Thread 0 computed sum between rows 0 and 14
 
-Thread 0 computed sum between rows 0 and 35
+Thread 2 computed sum between rows 28 and 42
 
-Thread 1 computed sum between rows 35 and 70
+Thread 1 computed sum between rows 14 and 28
 
-Thread 5 computed sum between rows 175 and 210
+Thread 3 computed sum between rows 42 and 56
 
-Thread 3 computed sum between rows 105 and 140
+Thread 4 computed sum between rows 56 and 70
 
-Thread 6 computed sum between rows 210 and 245
+Thread 5 computed sum between rows 70 and 84
 
-Thread 4 computed sum between rows 140 and 175
+Thread 6 computed sum between rows 84 and 98
 
-Time taken : 0.069223
+Time taken : 0.001928
 
-Speed-Up = 1.272482
+Speed-Up = 0.035441
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -157,29 +220,38 @@ Iteration 8
 
 Number of Threads : 8
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 3 computed sum between rows 93 and 124
+Thread 0 computed sum between rows 0 and 12
 
-Thread 0 computed sum between rows 0 and 31
+Thread 1 computed sum between rows 12 and 24
 
-Thread 4 computed sum between rows 124 and 155
+Thread 2 computed sum between rows 24 and 36
 
-Thread 1 computed sum between rows 31 and 62
+Thread 3 computed sum between rows 36 and 48
 
-Thread 5 computed sum between rows 155 and 186
+Thread 4 computed sum between rows 48 and 60
 
-Thread 2 computed sum between rows 62 and 93
+Thread 5 computed sum between rows 60 and 72
 
-Thread 6 computed sum between rows 186 and 217
+Thread 6 computed sum between rows 72 and 84
 
-Thread 7 computed sum between rows 217 and 248
+Thread 7 computed sum between rows 84 and 96
 
-Time taken : 0.072837
+Time taken : 0.002959
 
-Speed-Up = 1.338915
+Speed-Up = 0.054393
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------
 
@@ -187,30 +259,39 @@ Iteration 9
 
 Number of Threads : 9
 
-Generated Matrix 1 of size 250X250
-Generated Matrix 2 of size 250X250
+Generated Matrix 1 of size 100X100
+Generated Matrix 2 of size 100X100
 
 
-Thread 1 computed sum between rows 27 and 54
+Thread 1 computed sum between rows 11 and 22
 
-Thread 4 computed sum between rows 108 and 135
+Thread 0 computed sum between rows 0 and 11
 
-Thread 2 computed sum between rows 54 and 81
+Thread 3 computed sum between rows 33 and 44
 
-Thread 5 computed sum between rows 135 and 162
+Thread 2 computed sum between rows 22 and 33
 
-Thread 3 computed sum between rows 81 and 108
+Thread 4 computed sum between rows 44 and 55
 
-Thread 0 computed sum between rows 0 and 27
+Thread 5 computed sum between rows 55 and 66
 
-Thread 6 computed sum between rows 162 and 189
+Thread 7 computed sum between rows 77 and 88
 
-Thread 8 computed sum between rows 216 and 243
+Thread 6 computed sum between rows 66 and 77
 
-Thread 7 computed sum between rows 189 and 216
+Thread 8 computed sum between rows 88 and 99
 
-Time taken : 0.058759
+Time taken : 0.004735
 
-Speed-Up = 1.080129
+Speed-Up = 0.087040
+RLIMIT_CORE :rlim_cur => 0, :rlim_max => -1
+RLIMIT_CPU :rlim_cur => -1, :rlim_max => -1
+RLIMIT_DATA :rlim_cur => -1, :rlim_max => -1
+RLIMIT_FSIZE :rlim_cur => -1, :rlim_max => -1
+RLIMIT_MEMLOCK :rlim_cur => 65536, :rlim_max => 65536
+RLIMIT_NOFILE :rlim_cur => 1024, :rlim_max => 65536
+RLIMIT_NPROC :rlim_cur => 31026, :rlim_max => 31026
+RLIMIT_RSS :rlim_cur => -1, :rlim_max => -1
+RLIMIT_STACK :rlim_cur => 8388608, :rlim_max => -1
 
 -----------------------------------------------------------------------------

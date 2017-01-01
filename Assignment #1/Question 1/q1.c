@@ -1,5 +1,7 @@
 /******************************************************************************
 * FILE: q1.c
+* ASSIGNMENT: 1
+* QUESTION: 1
 * DESCRIPTION:
 *   A "Hello World" Pthreads program.  Demonstrates creation and
 *   termination of 5 threads.

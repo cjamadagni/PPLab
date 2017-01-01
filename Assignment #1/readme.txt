@@ -19,6 +19,3 @@ For Questions 4 & 7:
 		 - output.txt contains the output of the program
 		 - explanation.txt contains the answers to the theoretical components of each question
 
-For Question 3:
-
-		 - output.txt contains the answers to each sub question

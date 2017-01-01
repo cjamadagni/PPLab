@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 	printf("\n\nVector X consists of %d elements with value = 1", (veclen));
 	printf("\nVector Y consists of %d elements with value = 3", (veclen));
 
-    // Updating value of global structure
+  // Updating value of global structure
 	x = p;
 	y = q;
 	a = 4;

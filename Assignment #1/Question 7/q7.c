@@ -21,7 +21,7 @@
 #include <time.h>
 #include <sys/resource.h>
 
-#define matlen 100
+#define matlen 250
 
 // Global variables
 int numOfThreads; // number of threads
@@ -83,6 +83,8 @@ int main(int argc, char* argv[]) {
 
    long i;
    struct rlimit rlim;
+   struct rlimit lim = {1024,1024};
+   setrlimit(RLIMIT_STACK, &lim);
    numOfThreads = atoi(argv[1]);
    pthread_t threads[numOfThreads];
    int resources[] = {RLIMIT_CORE, RLIMIT_CPU, RLIMIT_DATA, RLIMIT_FSIZE,
@@ -116,8 +118,9 @@ int main(int argc, char* argv[]) {
    cpuTimeUsed = ((double) (stop - begin)) / CLOCKS_PER_SEC;
 
  	 printf("\n\nTime taken : %lf\n", cpuTimeUsed);
-   printf("\nSpeed-Up = %lf\n", cpuTimeUsed/0.0544);
+   printf("\nSpeed-Up = %lf\n\n", cpuTimeUsed/0.0544);
    int n = sizeof(resources)/sizeof(resources[0]);
+   printf("\ngetrlimit() Statistics\n\n");
    for (i = 0; i < n; i++) {
        getrlimit(resources[i], &rlim);
        print_rlimit(&rlim, names[i]);

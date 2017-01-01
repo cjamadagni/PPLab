@@ -12,7 +12,7 @@
 * Output: Execution time and speed-up value
 *
 *
-* AUTHORS: Abhijith Anilkumar (13CO102) & Chirag Jamadagni (13CO117)
+* 
 ******************************************************************************/
 
 #include <stdio.h>

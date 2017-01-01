@@ -4,7 +4,7 @@
 *   A "Hello World" Pthreads program.  Demonstrates creation and
 *   termination of 5 threads.
 * 
-* AUTHORS: Chirag Jamadagni (13CO117) & Abhijith Anilkumar (13CO102)  
+* 
 ******************************************************************************/
 
 #include <pthread.h>

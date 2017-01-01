@@ -1,0 +1,207 @@
+
+Iteration 1
+
+Number of Threads : 1
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 65536
+
+Time taken : 0.000288
+
+Speed-Up = 0.597510
+
+-----------------------------------------------------------------------------
+
+Iteration 2
+
+Number of Threads : 2
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 32768
+
+Thread 1 computed sum between indices 32768 and 65536
+
+Time taken : 0.000238
+
+Speed-Up = 0.493776
+
+-----------------------------------------------------------------------------
+
+Iteration 3
+
+Number of Threads : 3
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 1 computed sum between indices 21845 and 43690
+
+Thread 0 computed sum between indices 0 and 21845
+
+Thread 2 computed sum between indices 43690 and 65535
+
+Time taken : 0.000694
+
+Speed-Up = 1.439834
+
+-----------------------------------------------------------------------------
+
+Iteration 4
+
+Number of Threads : 4
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 16384
+
+Thread 1 computed sum between indices 16384 and 32768
+
+Thread 2 computed sum between indices 32768 and 49152
+
+Thread 3 computed sum between indices 49152 and 65536
+
+Time taken : 0.000503
+
+Speed-Up = 1.043568
+
+-----------------------------------------------------------------------------
+
+Iteration 5
+
+Number of Threads : 5
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 13107
+
+Thread 3 computed sum between indices 39321 and 52428
+
+Thread 2 computed sum between indices 26214 and 39321
+
+Thread 1 computed sum between indices 13107 and 26214
+
+Thread 4 computed sum between indices 52428 and 65535
+
+Time taken : 0.000447
+
+Speed-Up = 0.927386
+
+-----------------------------------------------------------------------------
+
+Iteration 6
+
+Number of Threads : 6
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 10922
+
+Thread 2 computed sum between indices 21844 and 32766
+
+Thread 3 computed sum between indices 32766 and 43688
+
+Thread 1 computed sum between indices 10922 and 21844
+
+Thread 4 computed sum between indices 43688 and 54610
+
+Thread 5 computed sum between indices 54610 and 65532
+
+Time taken : 0.000411
+
+Speed-Up = 0.852697
+
+-----------------------------------------------------------------------------
+
+Iteration 7
+
+Number of Threads : 7
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 9362
+
+Thread 3 computed sum between indices 28086 and 37448
+
+Thread 1 computed sum between indices 9362 and 18724
+
+Thread 2 computed sum between indices 18724 and 28086
+
+Thread 4 computed sum between indices 37448 and 46810
+
+Thread 5 computed sum between indices 46810 and 56172
+
+Thread 6 computed sum between indices 56172 and 65534
+
+Time taken : 0.000517
+
+Speed-Up = 1.072614
+
+-----------------------------------------------------------------------------
+
+Iteration 8
+
+Number of Threads : 8
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 8192
+
+Thread 1 computed sum between indices 8192 and 16384
+
+Thread 3 computed sum between indices 24576 and 32768
+
+Thread 5 computed sum between indices 40960 and 49152
+
+Thread 4 computed sum between indices 32768 and 40960
+
+Thread 2 computed sum between indices 16384 and 24576
+
+Thread 6 computed sum between indices 49152 and 57344
+
+Thread 7 computed sum between indices 57344 and 65536
+
+Time taken : 0.000630
+
+Speed-Up = 1.307054
+
+-----------------------------------------------------------------------------
+
+Iteration 9
+
+Number of Threads : 9
+
+Vector X consists of 65536 elements with value = 1
+Vector Y consists of 65536 elements with value = 3
+
+Thread 0 computed sum between indices 0 and 7281
+
+Thread 1 computed sum between indices 7281 and 14562
+
+Thread 3 computed sum between indices 21843 and 29124
+
+Thread 2 computed sum between indices 14562 and 21843
+
+Thread 5 computed sum between indices 36405 and 43686
+
+Thread 4 computed sum between indices 29124 and 36405
+
+Thread 6 computed sum between indices 43686 and 50967
+
+Thread 7 computed sum between indices 50967 and 58248
+
+Thread 8 computed sum between indices 58248 and 65529
+
+Time taken : 0.000909
+
+Speed-Up = 1.885892
+
+-----------------------------------------------------------------------------

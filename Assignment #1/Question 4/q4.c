@@ -63,11 +63,9 @@ void *DAXPY (void *arg) {
 int main(int argc, char *argv[]) {
 
 	long i;
-	void *status;
 	double *p, *q;
 	numOfThreads = atoi(argv[1]);
 	pthread_t threads[numOfThreads];
-	pthread_attr_t attr;
 
 	// Allocating memory and initializing values of input vectors
 	p = (double*) malloc(veclen*sizeof(double));
@@ -92,21 +90,18 @@ int main(int argc, char *argv[]) {
 
 	begin = clock();
 	// Creating threads to perform the dot product calculation
-	pthread_attr_init(&attr);
-	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 	for(i=0; i<numOfThreads; i++)
-		pthread_create(&threads[i], &attr, DAXPY, (void *)i);
-	pthread_attr_destroy(&attr);
+		pthread_create(&threads[i], NULL, DAXPY, (void *)i);
 
 
  	// Waiting for other threads to finish execution
 	for(i=0; i<numOfThreads; i++)
-		pthread_join(threads[i], &status);
+		pthread_join(threads[i], NULL);
 	stop = clock();
 	cpuTimeUsed = ((double) (stop - begin)) / CLOCKS_PER_SEC;
 
 	printf("\n\nTime taken : %lf\n", cpuTimeUsed);
-	printf("\nSpeed-Up = %lf\n", cpuTimeUsed/0.000039);
+	printf("\nSpeed-Up = %lf\n", cpuTimeUsed/0.000482);
 	printf("\n-----------------------------------------------------------------------------\n");
 
  	// Memory cleanup

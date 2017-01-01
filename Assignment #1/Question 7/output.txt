@@ -1,0 +1,198 @@
+
+Iteration 1
+
+Number of Threads : 1Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 0 computed sum between rows 0 and 250
+
+Time taken : 0.042388
+
+Speed-Up = 0.779191
+
+-----------------------------------------------------------------------------
+
+Iteration 2
+
+Number of Threads : 2Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 1 computed sum between rows 125 and 250
+
+Thread 0 computed sum between rows 0 and 125
+
+Time taken : 0.041088
+
+Speed-Up = 0.755294
+
+-----------------------------------------------------------------------------
+
+Iteration 3
+
+Number of Threads : 3Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 0 computed sum between rows 0 and 83
+
+Thread 1 computed sum between rows 83 and 166
+
+Thread 2 computed sum between rows 166 and 249
+
+Time taken : 0.045519
+
+Speed-Up = 0.836746
+
+-----------------------------------------------------------------------------
+
+Iteration 4
+
+Number of Threads : 4Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 0 computed sum between rows 0 and 62
+
+Thread 2 computed sum between rows 124 and 186
+
+Thread 1 computed sum between rows 62 and 124
+
+Thread 3 computed sum between rows 186 and 248
+
+Time taken : 0.055833
+
+Speed-Up = 1.026342
+
+-----------------------------------------------------------------------------
+
+Iteration 5
+
+Number of Threads : 5Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 0 computed sum between rows 0 and 50
+
+Thread 1 computed sum between rows 50 and 100
+
+Thread 4 computed sum between rows 200 and 250
+
+Thread 3 computed sum between rows 150 and 200
+
+Thread 2 computed sum between rows 100 and 150
+
+Time taken : 0.065451
+
+Speed-Up = 1.203143
+
+-----------------------------------------------------------------------------
+
+Iteration 6
+
+Number of Threads : 6Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 2 computed sum between rows 82 and 123
+
+Thread 1 computed sum between rows 41 and 82
+
+Thread 4 computed sum between rows 164 and 205
+
+Thread 5 computed sum between rows 205 and 246
+
+Thread 3 computed sum between rows 123 and 164
+
+Thread 0 computed sum between rows 0 and 41
+
+Time taken : 0.056898
+
+Speed-Up = 1.045919
+
+-----------------------------------------------------------------------------
+
+Iteration 7
+
+Number of Threads : 7Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 2 computed sum between rows 70 and 105
+
+Thread 4 computed sum between rows 140 and 175
+
+Thread 3 computed sum between rows 105 and 140
+
+Thread 0 computed sum between rows 0 and 35
+
+Thread 1 computed sum between rows 35 and 70
+
+Thread 5 computed sum between rows 175 and 210
+
+Thread 6 computed sum between rows 210 and 245
+
+Time taken : 0.056648
+
+Speed-Up = 1.041324
+
+-----------------------------------------------------------------------------
+
+Iteration 8
+
+Number of Threads : 8Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 1 computed sum between rows 31 and 62
+
+Thread 2 computed sum between rows 62 and 93
+
+Thread 4 computed sum between rows 124 and 155
+
+Thread 5 computed sum between rows 155 and 186
+
+Thread 3 computed sum between rows 93 and 124
+
+Thread 0 computed sum between rows 0 and 31
+
+Thread 6 computed sum between rows 186 and 217
+
+Thread 7 computed sum between rows 217 and 248
+
+Time taken : 0.057280
+
+Speed-Up = 1.052941
+
+-----------------------------------------------------------------------------
+
+Iteration 9
+
+Number of Threads : 9Generated Matrix 1 of size 250X250
+Generated Matrix 2 of size 250X250
+
+
+Thread 1 computed sum between rows 27 and 54
+
+Thread 2 computed sum between rows 54 and 81
+
+Thread 3 computed sum between rows 81 and 108
+
+Thread 4 computed sum between rows 108 and 135
+
+Thread 5 computed sum between rows 135 and 162
+
+Thread 7 computed sum between rows 189 and 216
+
+Thread 0 computed sum between rows 0 and 27
+
+Thread 6 computed sum between rows 162 and 189
+
+Thread 8 computed sum between rows 216 and 243
+
+Time taken : 0.061686
+
+Speed-Up = 1.133934
+
+-----------------------------------------------------------------------------

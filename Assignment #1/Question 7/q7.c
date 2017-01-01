@@ -1,6 +1,19 @@
-/* Comments!
-
- */
+/******************************************************************************
+* FILE: q7.c
+* ASSIGNMENT: 1
+* QUESTION: 7
+* DESCRIPTION: Program to generate two matrices and calculate the time taken for
+*              performing the matrix multiplication. The computation of product
+*              is split equally amongst the number of threads availvable.
+*
+* INPUT: - X: Randomly generated matrix
+*        - Y: Randomly generated matrix
+*
+* Output: Execution time and speed-up value
+*
+*
+* AUTHORS: Abhijith Anilkumar (13CO102) & Chirag Jamadagni (13CO117)
+******************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -65,6 +78,8 @@ int main(int argc, char* argv[]) {
 
    length = matlen/numOfThreads;
 
+   printf("\nIteration %d\n\nNumber of Threads : %d", numOfThreads, numOfThreads);
+
    srandom(1);
    matrixGen(x, matlen);
    printf("Generated Matrix 1 of size %dX%d\n", matlen, matlen);
@@ -88,6 +103,8 @@ int main(int argc, char* argv[]) {
    cpuTimeUsed = ((double) (stop - begin)) / CLOCKS_PER_SEC;
 
  	 printf("\n\nTime taken : %lf\n", cpuTimeUsed);
+   printf("\nSpeed-Up = %lf\n", cpuTimeUsed/0.000039);
+   printf("\n-----------------------------------------------------------------------------\n");
 
    return 0;
 }
